@@ -1,0 +1,64 @@
+2019/04/25 19:34:52 Using in-memory storage
+2019/04/25 19:34:52 [SMTP] Binding to address: 0.0.0.0:1025
+2019/04/25 19:34:52 Serving under http://:1080/
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Starting session
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Received 16 bytes: 'EHLO localhost\r\n'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: ESTABLISH] In ESTABLISH state
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Sent 21 bytes: '250-Hello localhost\r\n'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Sent 16 bytes: '250-PIPELINING\r\n'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Received 35 bytes: 'MAIL FROM:<www-data@cfef791937db>\r\n'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@cfef791937db>
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@cfef791937db>'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: MAIL] In MAIL state
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Sent 37 bytes: '250 Sender www-data@cfef791937db ok\r\n'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: RCPT] In RCPT state
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: RCPT] Got RCPT command
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Received 6 bytes: 'DATA\r\n'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: RCPT] Processing line: DATA
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: RCPT] In RCPT state
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: RCPT] Got DATA command, switching to DATA state
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Received 732 bytes: 'To: marcin.adam.mroczko@gmail.com\r\nSubject: [WP-site-1] Password Reset\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Sat, 27 Apr 2019 12:59:45 +0000\r\nFrom: WordPress <wordpress@wpsite1.local>\r\nMessage-ID: <4bf904fc0fceff7cc5e52b830ce34d57@wpsite1.local>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nSomeone has requested a password reset for the following account:\r\n\r\nSite Name: WP-site-1\r\n\r\nUsername: Marcin\r\n\r\nIf this was a mistake, just ignore this email and nothing will happen.\r\n\r\nTo reset your password, visit the following address:\r\n\r\n<http://wpsite1.local/wp-login.php?action=rp&key=H9iqY1NBSmt7piUxU7h7&login=Marcin>\r\n\r\n.\r\n'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2019/04/27 12:59:45 Parsing Content from string: 'To: marcin.adam.mroczko@gmail.com
+Subject: [WP-site-1] Password Reset
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Sat, 27 Apr 2019 12:59:45 +0000
+From: WordPress <wordpress@wpsite1.local>
+Message-ID: <4bf904fc0fceff7cc5e52b830ce34d57@wpsite1.local>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Someone has requested a password reset for the following account:
+
+Site Name: WP-site-1
+
+Username: Marcin
+
+If this was a mistake, just ignore this email and nothing will happen.
+
+To reset your password, visit the following address:
+
+<http://wpsite1.local/wp-login.php?action=rp&key=H9iqY1NBSmt7piUxU7h7&login=Marcin>
+'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Storing message 8NE2OO5sraoXkcRTEKFX6rkWr_noTv44jnuf_b4NOh0=@mailhog.example
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Sent 80 bytes: '250 Ok: queued as 8NE2OO5sraoXkcRTEKFX6rkWr_noTv44jnuf_b4NOh0=@mailhog.example\r\n'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Received 6 bytes: 'QUIT\r\n'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: MAIL] Processing line: QUIT
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Sent 9 bytes: '221 Bye\r\n'
+2019/04/27 12:59:45 [SMTP 127.0.0.1:50294] Session ended
