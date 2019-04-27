@@ -46,6 +46,9 @@ function university_file() {
 	wp_enqueue_style('custom-google-fonts', 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i" rel="stylesheet');
 	wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 	wp_enqueue_style('university_main_styles', get_stylesheet_uri());
+	wp_localize_script('main-university-js', 'universityData', array(
+		'root_url' => get_site_url()
+	));
 }
 
 add_action('wp_enqueue_scripts', 'university_file');
